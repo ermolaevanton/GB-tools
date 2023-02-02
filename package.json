@@ -1,0 +1,23 @@
+{
+  "name": "gb-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ermolaevanton/GB-tools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ermolaevanton/GB-tools/issues"
+  },
+  "homepage": "https://github.com/ermolaevanton/GB-tools#readme",
+  "dependencies": {
+    "howler": "^2.2.3"
+  }
+}
