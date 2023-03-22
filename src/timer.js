@@ -1,15 +1,16 @@
 import { inputTimer, pause, resultTimer } from "./constantsDOM.js";
 import { formatError } from "./utils.js";
-// import { Howl } from "howler";
-// const { Howl } = require('howler');
+import { Howl } from "howler";
+import bum from '../sound/bum.mp3';
+
 
 
 let runTimer;
 let i;
 
-// const sound = new Howl({
-//     src: ['../sound/bum.mp3']
-// });
+const sound = new Howl({
+    src: [bum]
+});
 
 export const timerFn = () => {
     let isPaused = false;
@@ -32,7 +33,7 @@ export const timerFn = () => {
         runTimer = setInterval(() => {
             if (!isPaused) {
                 if (i < 0) {
-                    // sound.play();
+                    sound.play();
                     clearInterval(runTimer);
                 } else {
                     resultTimer.innerText = `Осталось ${i}`;

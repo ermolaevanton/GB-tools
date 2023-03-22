@@ -3,6 +3,7 @@ import { formatError } from "./utils.js";
 import { switchBlock } from "./switchBlock.js";
 import { timerFn, resetTimer } from "./timer.js";
 import { dateCalcForm, dateCalcResult, start, reset } from "./constantsDOM.js";
+import "./style/style.css";
 
 
 dateCalcForm.addEventListener("submit", handleCalcDates);
