@@ -1,6 +1,7 @@
 import { inputTimer, pause, resultTimer } from "./constantsDOM.js";
 import { formatError } from "./utils.js";
 import { Howl } from "howler";
+import bum from '../sound/bum.mp3';
 
 
 
@@ -8,7 +9,7 @@ let runTimer;
 let i;
 
 const sound = new Howl({
-    src: ['../sound/bum.mp3']
+    src: [bum]
 });
 
 export const timerFn = () => {
